@@ -13,11 +13,11 @@
 # 	It can also be used manually if needed.
 #
 # [Manual Usage]
-# 	- Login as a user with admin privileges... You can do this from the user's terminal by running
-#	  the following command:
-#		> sudo su jamfadmin
-#	- Run the script:
-#		> curl -sS https://raw.githubusercontent.com/pcdoyle/jamf-scripts/refs/heads/main/remove-nomad.sh | sudo zsh
+# - Login as a user with admin privileges... You can do this from the user's terminal by running
+#	the following command:
+#	> sudo su jamfadmin
+#- Run the script:
+#	> curl -sS https://raw.githubusercontent.com/pcdoyle/jamf-scripts/refs/heads/main/remove-nomad.sh | sudo zsh
 
 # Process termination settings
 readonly TERMINATE_TIMEOUT=120        # Maximum seconds to wait for termination

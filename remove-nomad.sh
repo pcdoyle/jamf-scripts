@@ -16,7 +16,7 @@
 # - Login as a user with admin privileges... You can do this from the user's terminal by running
 #	the following command:
 #	> sudo su jamfadmin
-#- Run the script:
+# - Run the script:
 #	> curl -sS https://raw.githubusercontent.com/pcdoyle/jamf-scripts/refs/heads/main/remove-nomad.sh | sudo zsh
 
 # Process termination settings

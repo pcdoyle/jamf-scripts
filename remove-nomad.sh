@@ -5,7 +5,7 @@
 # This script removes NoMAD from the system. It will stop the NoMAD process, unload the LaunchAgents,
 # remove the application specific files, and remove the user-specific files.
 #
-# Author: Patrick Doyle (pdoyle@glaciermedia.ca)
+# Author: Patrick Doyle (pdoyle@madison.ca)
 # Version: v0.202601.09
 #
 # [Jamf Policy Usage]

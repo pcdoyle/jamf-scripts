@@ -16,11 +16,8 @@
 # 	- Login as a user with admin privileges... You can do this from the user's terminal by running
 #	  the following command:
 #		> sudo su jamfadmin
-#	- Change to the script directory (using cd command)
-#	- Make the script executable:
-#		> chmod +x ./remove-nomad.sh
 #	- Run the script:
-# 		> sudo ./remove-nomad.sh
+#		> curl -sS https://raw.githubusercontent.com/pcdoyle/jamf-scripts/refs/heads/main/remove-nomad.sh | sudo zsh
 
 # Process termination settings
 readonly TERMINATE_TIMEOUT=120        # Maximum seconds to wait for termination

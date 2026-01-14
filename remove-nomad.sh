@@ -6,7 +6,7 @@
 # remove the application specific files, and remove the user-specific files.
 #
 # Author: Patrick Doyle (pdoyle@madison.ca)
-# Version: v0.202601.09
+# Version: v0.202601.10
 #
 # [Jamf Policy Usage]
 # 	Intended for use in a Jamf Policy to remove NoMAD from the system.
@@ -33,7 +33,7 @@ readonly EXIT_INTERRUPTED=130 # SIGINT Code
 trap 'error "Script interrupted"; exit $EXIT_INTERRUPTED' INT TERM
 
 # For Jamf logging
-function log {
+function log_message {
 	local level=$1
 	shift
 	local message="$@"
@@ -42,9 +42,9 @@ function log {
 	echo "$timestamp [$level] $message"
 }
 
-function info { log "INFO" "$@"; }
-function skip { log "SKIP" "$@"; }
-function error { log "ERROR" "$@"; }
+function info { log_message	 "INFO" "$@"; }
+function skip { log_message "SKIP" "$@"; }
+function error { log_message "ERROR" "$@"; }
 
 function remove_file {
 	if [[ -f "$1" ]]; then
